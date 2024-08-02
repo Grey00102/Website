@@ -1,66 +1,92 @@
-<!DOCTYPE html>
+/<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Portfolio</title>
 </head>
-<body class="text-center text-xl font-medium bg-slate-800 m-8">
-    <section class="text-sky-200 grid justify-center item-center"><br><br>
-        Today I will be using Tailwind as the framework.<br>
-        To use it simply include https://cdn.tailwindcss.com as a src in script<br><br>
-        <img src="firstcode.png" width = 100% height = auto><br>
-        or you can visit the <a href="https://tailwindcss.com/docs/installation/play-cdn">Tailwind Website from this link</a>
+<body>
+    <nav>
+        <div class="nav_content">
+            <div class="logo">
+                <a href="#">HTML/CSS</a></div>
+                <label for="check" class="checkbox">
+
+                </label>
+                <input type="checkbox" name="check" id="check">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <div class="dropdown">Resume
+                        <div class="dropdowncontent">
+                            <a href="./JaideepSinghKhairaResumeFinal.pdf" download>Download PDF</a>
+                            <a href="./JaideepSinghKhairaResumeFinal.docx" download>Download Word</a>
+                        </div>
+                    </div>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+        </div>
+    </nav>
+    <section class="section" id="home">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">Hi</p>
+                <h1 class="title">
+                    I am <span>Jaideep<br> and </span> Welcome to my website
+                </h1>
+                <p class="description">
+                    This is a simple website made using only HTML and CSS.
+                </p>
+                <div class="action__btn"> 
+                    <button class="website"> Main Website</button>
+                    <button class="portfolio">Portfolio</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="profilepic.jpg" alt="profile">
+            </div>
+        </div>
     </section>
-    <section class="text-sky-200 grid justify-center item-center">
-        To start of I wrote some basic code like this and tested if tailwind was working by using text-sky-200<br><br>
-        <img src="first code.PNG" width = 100% height = auto><br>
-        Next I started working on the contents of the page mostly text explaining each step/planning for it<br>
-        <a href="https://v2.tailwindcss.com/docs">Then I visited the Tailwind Documents Website</a> to learn and apply styling to my page<br>
-        you can also install Tailwind CSS using these simple steps:<br><br><br>
+    <section class="section" id="about">
+        <div class="section__container">
+            <div class="image">
+                <img src="AboutUs.jpg" alt="profile">
+            </div>
+            <div class="content">
+
+                <h1 class="title">
+                    About Me
+
+                </h1>
+                <p class="description">
+                    Hello, I am an aspiring developer with a passion for creating innovative solutions and exploring new technologies. 
+                    I’m eager to offer my skills and make a meaningful impact while continuing to learn and grow in the field.<br><br> I hold
+                    a Bachelor’s in Computer Science from Ryerson/Toronto Metropolitan University, and I have hands-on experience in 
+                    various domains including Web Development, Computer Graphics, Game Development, Artificial Intelligence, and 
+                    Machine Learning. For me, every project is an opportunity to expand my knowledge, tackle new challenges, and 
+                    deliver exceptional results.<br><br>I thrive in a team-based environment and excel at adapting under pressure. My greatest 
+                    strength is my pragmatic approach and ability to stay calm and focused in stressful situations. While I continuously
+                     strive to improve, I recognize that my journey is just beginning, and I’m committed to both personal and professional 
+                     development. <br><br>I would love to connect with you! Whether you’re interested in collaborating on a project or just want
+                      to have a chat, please feel free to reach out. You can explore my portfolio to see some of my work, and connect 
+                      with me on LinkedIn. <br><br>Thank you for visiting my portfolio. I look forward to the opportunity to work together and
+                       discuss how we can create something extraordinary!
+                </p>
+                <div class="action__btn">
+                    <button class="website"> Main Website</button>
+                    <button class="portfolio">Portfolio</button>
+                </div>
+            </div>
+            
+        </div>
     </section>
-    <section class="grid grid-cols-3">
-        <section class="text-sky-200 grid justify-center item-center">
-            In the treminal Install tailwindcss via npm, and create your tailwind.config.js file.
-            <img src="tail1.png" width = 100% height = auto>
-        </section>
-        <section class="text-sky-200 grid justify-center item-center">
-            Add the paths to all of your template files in your tailwind.config.js file.<br><br>
-            <img src="tail2.png" width = 100% height = auto><br>
-        </section>
-        <section class="text-sky-200 grid justify-center item-center">
-            Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
-            <img src="tail3.png" width = 100% height = auto>
-        </section>
+        
+    <section>
+
     </section>
-    <section class="grid grid-cols-2">
-        <section class="text-sky-200 grid justify-center item-center">
-            Run the CLI tool to scan your template files for classes and build your CSS.
-            <img src="tail4.png" width = 100% height = auto>
-        </section>
-        <section class="text-sky-200 grid justify-center item-center">
-            Add your compiled CSS file to the <head> and start using Tailwind’s utility classes to style your content.<br><br>
-            <img src="tail5.png" width = 100% height = auto><br>
-        </section>
-    </section>
-    <section class="text-sky-200 grid justify-center item-center">
-        and started applying styling to my webpage<br>
-        The main difficulties encountered were really just choosing the framework and website to host my webpage<br>
-        which was solved by github, being an already trusted site by me and <br>
-        for picking the framework, I trusted <a href="https://www.youtube.com/@Fireship">fireship(a youtube channel)</a>
-        specifically these two videos <a href="https://www.youtube.com/watch?v=mr15Xzb1Ook">tailwind in 100 seconds </a> and 
-        <a href="https://www.youtube.com/watch?v=lHZwlzOUOZ4&t=1s">tailwind CSS is the worst.. </a>
-        followed by a little bit more research online.<br>
-        Tailwind itself was quite similar to Bootstrap as such i encountered very little problems<br>
-        However the only big problem i encountered in tailwind itself was Choosing the color itself,<br>
-        which was solved by spending some time in the documentation and some experimentation<br><br>
-        As for styling i wanted to keep it simple so i used grid system, aligned everthing including<br>
-        text in the middle and picked a blue themed background and text color given tailwind logo is blue<br>
-        I used colouns in the installation part with 3 on first row and 2 on second to make it look better <br>
-        and not put everthing in the middle. i also added some margins.<br><br><br>
-        Thank you for visiting my website, I hope you have a lovely day ahead!!<br><br><br><br><br>
-    </section>
+    
 </body>
 </html>
